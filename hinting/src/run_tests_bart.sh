@@ -1,0 +1,10 @@
+echo "Starting bart scripts..."
+cd bart
+screen -dm bash -c "CUDA_VISIBLE_DEVICES=0 /u/pe25171/anaconda3/envs/hinting/bin/python finetune_model_hinting.py  --use_pretrain --desc 'base_bart_no_mem_no_hint' --seed 9876 --n_iter 10 --model_dir base_bart_no_mem_no_hint --data_dir ../../data"
+screen -dm bash -c "CUDA_VISIBLE_DEVICES=1 /u/pe25171/anaconda3/envs/hinting/bin/python finetune_model_hinting.py  --use_pretrain --desc 'base_bart_no_mem_no_hint2' --seed 6543 --n_iter 10 --model_dir base_bart_no_mem_no_hint2 --data_dir ../../data"
+screen -dm bash -c "CUDA_VISIBLE_DEVICES=2 /u/pe25171/anaconda3/envs/hinting/bin/python finetune_model_hinting.py  --use_pretrain --desc 'base_bart_no_mem_no_hint3' --seed 4321 --n_iter 10 --model_dir base_bart_no_mem_no_hint3 --data_dir ../../data"
+screen -dm bash -c "CUDA_VISIBLE_DEVICES=3 /u/pe25171/anaconda3/envs/hinting/bin/python finetune_model_hinting.py  --use_pretrain --desc 'base_bart_no_mem_no_hint4' --seed 1234 --n_iter 10 --model_dir base_bart_no_mem_no_hint4 --data_dir ../../data"
+screen -dm bash -c "CUDA_VISIBLE_DEVICES=0 /u/pe25171/anaconda3/envs/hinting/bin/python finetune_model_hinting.py  --use_pretrain --desc 'base_bart_no_mem_hint' --seed 9876 --n_iter 10 --model_dir base_bart_no_mem_hint --data_dir ../../data --use_hint"
+screen -dm bash -c "CUDA_VISIBLE_DEVICES=1 /u/pe25171/anaconda3/envs/hinting/bin/python finetune_model_hinting.py  --use_pretrain --desc 'base_bart_no_mem_hint2' --seed 6543 --n_iter 10 --model_dir base_bart_no_mem_hint2 --data_dir ../../data --use_hint"
+screen -dm bash -c "CUDA_VISIBLE_DEVICES=2 /u/pe25171/anaconda3/envs/hinting/bin/python finetune_model_hinting.py  --use_pretrain --desc 'base_bart_no_mem_hint3' --seed 4321 --n_iter 10 --model_dir base_bart_no_mem_hint3 --data_dir ../../data --use_hint"
+screen -dm bash -c "CUDA_VISIBLE_DEVICES=3 /u/pe25171/anaconda3/envs/hinting/bin/python finetune_model_hinting.py  --use_pretrain --desc 'base_bart_no_mem_hint4' --seed 1234 --n_iter 10 --model_dir base_bart_no_mem_hint4 --data_dir ../../data --use_hint"

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="prg-beef" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="pe25171@matlaber8.media.mit.edu:22 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/joint_inference" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="pe25171@matlaberp5.media.mit.edu:22 password (1)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/u/pe25171/joint_inference" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="pedro@optimus-prime.media.mit.edu:22 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/pedro/joint_inference" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="prg-beef">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/joint_inference" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

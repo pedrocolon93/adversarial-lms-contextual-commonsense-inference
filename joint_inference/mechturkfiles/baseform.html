@@ -1,0 +1,95 @@
+<HTMLQuestion xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2011-11-11/HTMLQuestion.xsd">
+    <HTMLContent><![CDATA[
+        <!DOCTYPE html>
+        <body>
+        <script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+        <crowd-form>
+
+            <full-instructions header="Review Commonsense Statements">
+                <ol>
+                    <li>Read the given statement</li>
+                    <li>Answer the question about the statement. You should not take into consideration the grammatical correctness of the statement.</li>
+                    <li>Read the given context</li>
+                    <li>Answer the question about the statement given the context. You should not take into consideration the grammatical correctness of the statement.</li>
+                    <li>Answer the next question about a new statement given the same context. You should not take into consideration the grammatical correctness of the statement.</li>
+                </ol>
+
+            </full-instructions>
+
+            <short-instructions>
+                You are helping to determine whether a statement that was generated would be true for most people.
+                After this, you are then given a certain story context with a bolded sentence, and will determine once more if the statement, given the context with emphasis on the <i>italicized sentence</i>, would be true for most people.
+                You should not take into consideration the grammatical correctness of the sentence.
+                Lastly, you are given another statement and will determine  if the new statement, given the context with emphasis on the <i>italicized sentence</i>, would be true for most people.
+            </short-instructions>
+            <h1>Commonsense knowledge verification</h1>
+            <p> You are helping to determine whether some statement is true for most people or not. After this, you will determine whether the statement and another statement are true for most people, given a context.</p>
+            <p><b>Please make sure to read the full instructions before starting.</b></p>
+            <p><i>This HIT is part of a MIT scientific research project. Your decision to complete this HIT is voluntary. There is no way for us to identify you. The only information we will have, in addition to your responses, is the time at which you completed the survey. The results of the research may be presented at scientific meetings or published in scientific journals. Clicking on the 'SUBMIT' button on the bottom of this page indicates that you are at least 18 years of age and agree to complete this HIT voluntarily.</i></p>
+
+            <h2>Instructions</h2>
+            <details>
+                <ol>
+                    <li>Read the given statement</li>
+                    <li>Answer the question about the statement. You should not take into consideration the grammatical correctness of the statement.</li>
+                    <li>Read the given context</li>
+                    <li>Answer the question about the statement given the context. You should not take into consideration the grammatical correctness of the statement.</li>
+                    <li>Answer the next question about a new statement given the same context. You should not take into consideration the grammatical correctness of the statement.</li>
+                </ol>
+            </details>
+            <h2>Statement:</h2>
+            <p><strong><1></strong></p>
+            <div>
+                <h3>Question 1:</h3>
+                <p><i>Is the previous statement true for most people or not?</i></p>
+                <br>
+                <div>
+                    <input type="radio" id="general_validy" name="general_valid" value="Yes" required>
+                    <label for="general_validy">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" id="general_validn" name="general_valid" value="No">
+                    <label for="general_validn">No</label>
+                </div>
+                <hr>
+            </div>
+            <h2>Context:</h2>
+            <p><strong><2></strong></p>
+            <div>
+                <h3>Question 2:</h3>
+                <p><i>Given the previous context, is the statement: "<3>", true for most people or not?</i></p>
+                <br>
+                <div>
+                    <input type="radio" id="context_validy" name="context_valid" value="Yes" required>
+                    <label for="context_validy">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" id="context_validn" name="context_valid" value="No">
+                    <label for="context_validn">No</label>
+                </div>
+                <hr>
+                <h3>Question 3:</h3>
+                <p><i>Given the previous context, is the statement: "<4>", true for most people or not?</i></p>
+                <br>
+                <div>
+                    <input type="radio" id="gold_context_validy" name="gold_context_valid" value="Yes" required>
+                    <label for="gold_context_validy">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" id="gold_context_validn" name="gold_context_valid" value="No">
+                    <label for="gold_context_validn">No</label>
+                </div>
+                <hr>
+            </div>
+
+
+            <crowd-button form-action="submit">SUBMIT</crowd-button>
+
+        </crowd-form>
+        <5>
+        </body>
+
+        </html>
+        ]]></HTMLContent>
+    <FrameHeight>0</FrameHeight>
+</HTMLQuestion>

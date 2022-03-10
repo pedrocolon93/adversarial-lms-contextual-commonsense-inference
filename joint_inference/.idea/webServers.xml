@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="85847b33-d6f3-4254-934d-2ef7dc44b587" name="prg-beef">
+        <fileTransfer rootFolder="/u/pe25171" accessType="SFTP" host="matlaberp7.media.mit.edu" port="22" sshConfigId="e761469c-09a5-40d1-b39d-627e6f941290" sshConfig="pe25171@matlaberp7.media.mit.edu:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
